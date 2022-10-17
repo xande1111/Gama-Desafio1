@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --verde-header: #419488;
+    --verde-footer: #419488;
+    --verde-azulado: #419488;
+    --cinza-retangulo: #999999;
+    --cinza-bg: #F6F6F6;
+    --rosa: #FF4081;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* responsividade */
+
+
+
+/* header */
+
+header {
+    width: 100vw;
+    height: 117px;
+    background-color: var(--verde-header);
+    box-shadow: 0px 3px 7px rgba(12, 12, 12, 0.767);
+}
+
+header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    max-width: 1255px;
+    margin: 0 auto;
+
+}
+
+/* ajuste caso a tela tenha menos de 1255px */
+
+header .nav-container nav a {
+    text-transform: uppercase;
+    color: #f6f6f6;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px;
+    transition: all 0.5s ease;
+}
+
+header .nav-container nav a:hover {
+    color: #C4C4C4;
+}
+
+/* first main */
+
+.first-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1030px;
+    margin: 125px auto 66px auto;
+}
+
+.first-main .title h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--rosa);
+    margin-bottom: 20px;
+    width: 488px;
+}
+
+.first-main .title p {
+    font-size: 27px;
+    color: #646464;
+    margin-bottom: 40px;
+}
+
+.first-main .title .saberMais-btn {
+    background-color: #ffff;
+    color: var(--rosa);
+    border: 2px solid #ff4081;
+    border-radius: 62px;
+    padding: 8.5px 26px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.first-main .title .saberMais-btn:hover {
+    background-color: var(--rosa);
+    color: #ffff;
+}
+
+first-main img {
+    width: 500px;
+}
+
+/* second main */
+
+.second-main {
+    width: 100vw;
+    background-color: var(--cinza-bg);
+    display: flex;
+}
+
+.second-main .container {
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    margin-bottom: 120px;
+}
+
+.second-main .container .ilustracao {
+    width: 300px;
+    text-align: center;
+
+}
+
+.second-main .container .ilustracao img {
+    height: 270px;
+    margin-bottom: 45px;
+}
+
+.second-main .container .ilustracao p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+.second-main .container .ilustracao h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--rosa);
+    margin-bottom: 25px;
+}
+
+.second-main .container .ilustracao .ilustracao-btn {
+    background-color: var(--rosa);
+    color: #ffff;
+    border-radius: 62px;
+    border: 2px var(--rosa) solid;
+    outline: none;
+    padding: 15px 9px;
+    width: 230px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.second-main .container .ilustracao .ilustracao-btn:hover {
+    background-color: #ffff;
+    color: var(--rosa);
+}
+
+/* sobre nós */
+
+.sobreNos {
+    margin-top: 120px;
+    margin-bottom: 155px;
+}
+
+.sobreNos .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1090px;
+    width: 90%;
+    align-items: flex-start;
+    position: relative;
+    left: -25px;
+}
+
+.sobreNos h2 {
+    position: relative;
+    left: 0px;
+    top: 0;
+    font-weight: 700;
+    font-size: 37px;
+    color: var(--verde-azulado);
+    text-transform: uppercase;
+    margin-bottom: 78px;
+
+}
+
+.sobreNos .grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 97px;
+    row-gap: 86px;
+}
+
+.sobreNos .grid-section .grid {
+    display: flex;
+}
+
+.sobreNos .grid-section .grid img {
+    margin-right: 28px;
+    width: 105px;
+    height: 105px;
+}
+
+.sobreNos .grid-section .grid .grid-text {
+    width: 380px;
+    line-height: 25px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.sobreNos .grid-section .grid .grid-text .person-name {
+    font-weight: bold;
+}
+
+/* mais conteudo */
+
+.mais-conteudo {
+    padding-top: 95px;
+    padding-bottom: 53px;
+    background-color: var(--cinza-bg);
+}
+
+.mais-conteudo .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.mais-conteudo .container h1 {
+    font-weight: 700;
+    font-size: 37px;
+    color: var(--verde-azulado);
+    text-transform: uppercase;
+}
+
+.mais-conteudo .container .ver-posts {
+    width: 289px;
+    margin-bottom: 53px;
+}
+
+.mais-conteudo .conteudo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 109px;
+    align-items: center;
+    margin-top: 73px;
+    margin-bottom: 101px;
+}
+
+.mais-conteudo a {
+    align-self: center;
+}
+
+.mais-conteudo a .ver-posts {
+    align-items: center;
+    background-color: #fff;
+    color: var(--rosa);
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    padding: 8.5px 26px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mais-conteudo .ver-posts:hover {
+    background-color: var(--rosa);
+    color: #fff;
+}
+
+.mais-conteudo .conteudo-container .conteudo {
+    width: 319px;
+}
+
+.mais-conteudo .conteudo-container .conteudo img {
+    margin-bottom: 11px;
+}
+
+.mais-conteudo .conteudo-container .conteudo .titulo {
+    font-weight: 700;
+    font-size: 27px;
+    color: var(--verde-azulado);
+}
+
+.mais-conteudo .conteudo-container .conteudo .descricao {
+    font-size: 18px;
+}
+
+/* footer */
+
+footer {
+    width: 100vw;
+    background-color: var(--verde-footer);
+}
+
+footer .container {
+    margin: 30px auto;
+    max-width: 1255px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .footer-links a {
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Ubuntu';
+    color: #fff;
+}
+
+footer .container .footer-btn {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .container .footer-btn button {
+    background-color: var(--verde-azulado);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 62px;
+    padding: 14px;
+    margin: 13px;
+    width: 289px;
+    font-size: 20px;
+    cursor: pointer;
+}
