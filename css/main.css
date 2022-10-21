@@ -31,6 +31,44 @@ a {
 
 /* responsividade */
 
+@media (max-width: 1100px) {
+    .first-main .title {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .first-main img {
+        display: none;
+    }
+
+    .first-main .title .saberMais-btn {
+        margin-bottom: 30px;
+    }
+
+    .sobreNos .container {
+        align-items: center;
+    }
+
+    .sobreNos .grid-section {
+        grid-template-columns: 600px;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .sobreNos .grid-section .grid {
+        width: 800px;
+    }
+
+    .sobreNos .grid-section .grid .grid-text {
+        width: 481px;
+    }
+
+    .mais-conteudo .container h1 {
+        text-align: center;
+    }
+}
+
+
+
 
 
 /* header */
@@ -349,4 +387,65 @@ footer .container .footer-btn button {
     width: 289px;
     font-size: 20px;
     cursor: pointer;
+}
+
+/* cursos css */
+
+main {
+    font-family: 'Ubuntu';
+}
+
+.cursos-title h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 81px;
+    color: var(--rosa);
+}
+
+.cursos-title p {
+    font-size: 20px;
+    color: #555555;
+}
+
+.cursos-container .curso-options {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 53px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 68px;
+}
+
+.cursos-container .curso-options img {
+    padding: 53px 0;
+}
+
+.cursos-container .curso-options .options-txt h4 {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--rosa);
+    margin-bottom: 37px;
+}
+
+.cursos-container .curso-options .options-txt p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 53px;
+}
+
+.cursos-container .curso-options .options-txt button {
+    align-self: center;
+    background-color: var(--verde-footer);
+    color: #fff;
+    border-radius: 62px;
+    border: none;
+    width: 216px;
+    padding: 13px 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cursos-container .curso-options .options-txt button:hover {
+    background-color: #1a7e6f;
 }
